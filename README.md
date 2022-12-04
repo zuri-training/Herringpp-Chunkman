@@ -19,14 +19,9 @@ We are developing a web app with a library of various file compressors that auth
 
 Special Thanks to Zuri Training team and all members of team Team Herringpp 
 
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
-
 
 ## Authors
 - Team Herringpp
-- [@octokatherine](https://www.github.com/octokatherine)
 
 
 ## 🛠 Skills
@@ -38,9 +33,6 @@ Javascript, HTML, CSS, NodeJS
 What did you learn while building this project? What challenges did you face and how did you overcome them?
 
 Team work
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
 
 Zuri-Training
 ## Optimizations
@@ -50,16 +42,11 @@ What optimizations did you make in your code? E.g. refactors, performance improv
 Still working on it....
 ## Related
 
-Here are some related projects
-
-[Awesome README](https://github.com/matiassingers/awesome-readme)
 
 
 ## Roadmap
 
-- Additional browser support
-
-- Add more integrations
+- Milestone 1
 
 
 ## 🚀 About Me

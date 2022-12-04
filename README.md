@@ -17,7 +17,7 @@ We are developing a web app with a library of various file compressors that auth
 
 ## Acknowledgements
 
-Special Thanks to Zuri Training team and all members of team Team Herringpp 
+Special Thanks to Zuri Training Team and all members of Team Herringpp 
 
 
 ## Authors
@@ -29,15 +29,10 @@ Javascript, HTML, CSS, NodeJS
 
 
 ## Lessons Learned
-
-What did you learn while building this project? What challenges did you face and how did you overcome them?
-
 Team work
 
 Zuri-Training
 ## Optimizations
-
-What optimizations did you make in your code? E.g. refactors, performance improvements, accessibility
 
 Still working on it....
 ## Related

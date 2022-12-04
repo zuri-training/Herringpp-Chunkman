@@ -1,156 +1,75 @@
-* {
-    margin: 0;
+*{
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif, sans-serif;
-}
-
-
-/* Registration Page */
-ul {
-    list-style-type: none;
-}
-
-.navbar .logo {
-    font-size: 32px;
-    font-weight: 700;
-    color:  #131313;
-}
-
-.navbar a {
-    color: #131313;
+    margin: 0;
+    font-family: Roboto;
+  }
+  html, body{
+    width: 100%;  
+  }
+  nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.navbar .container {
+    top: 0;
+    position: relative;
+  }
+  #header-logo{
+    font-family: Roboto;
+    font-size: 25px;
+    background:  hsl(0, 0%, 95%);
+  }
+  ul{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    font-style: bold;
+    padding: 10px;
+  }
+  li{
+    list-style-type: none;
+    font-style: bold;
+  }
+  button{
+    border: 0;
+    border-radius: 15px;
+    font-style: bold;
+    width: 125px;
+    height: 15vh;
+    font-size: 20px; 
+  }
+  #welcome-message{
+   display: flex;
+   justify-content: center;
+   padding-top: 5px;
+   font-size: 30px;
+  }
+  .hero-section{
+    background-color: hsl(0, 0%, 95%);
+    height: 200px;
+    padding: 10px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 24px;
-    margin: 0;
-    padding: 30px;
-}
-
-.navbar ul{
-    display: flex;
-    margin: 0 2px;
-    padding: 0;
-}
-
-.navbar ul li {
-   padding: 10px;
-}
-
-.container {
-    display: flex;
-    margin: 20px;
-    padding: 50px;
-}
-
-.wel {
+    margin-bottom: 25px;
+  }
+  #about-section{
+    margin-top: 25px;
+    height: 200px;
+    padding: 10px;
+    margin: auto;
+    background-color: hsl(0, 0%, 95%);
+    text-align: center;
+  }
+  #abt-btn{
+    background: hsl(0, 0%, 95%);;
+    padding: 5px;
     font-size: 15px;
-    align-items: center;
-    padding-left: 200px;
-}
-
-.boy {
-    margin: 0;
-    padding: 0;
-}
-.section {
-    display: block;
-    width: 803px;
-    height: auto;
-    border: solid 1px #131313 ;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 0 200px 0 200px;
-    margin-top: 10px;
-}
-.section2{
-    display: flex;
-    flex-direction: column;
-    padding-left: 100px;
-}
-
-input {
-    border: 1px solid rgba(21, 21, 21, 0.5);
+    margin: 25px;
     border-radius: 15px;
-    width: 574px;
-    height: 70px;
-    font-size: 30px;
-    padding: 2px;
-    
-
-}
-
-.input-box {
-    padding: 10px;
-    margin: 5px;
-}
-
-.btn2 {
-    width: 228px;
-    height: 69px;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    background-color: #131313;
-    border-radius: 15px;
-    margin-left: 180px;
-}
-
-.here p {
-    font-size: 20px;
-    padding: 10px;
-    font-weight: 600;
-    padding-right: 180px;
-    text-align: center;
-    color: #131313;
-    line-height: 24px;
-    margin-left: 80px;
-}
-
-
-/* Log in Page */
-.col {
-  width: 574px;
-  margin-top: 6px;
-  text-align: center;
-  padding-left: 10px;
-}
-
-.fb {
-  background-color: #3B5998;
-  color: white;
-   width: 574px;
-   height: 69px;
-  padding: 25px;
-  border: none;
-  border-radius: 15px;
-  opacity: 0.85;
-  display: inline-block;
-  font-size: 17px;
-  line-height: 20px;
-  text-decoration: none; /* remove underline from anchors */
-}
-
-
-.google {
-  background-color: #dd4b39;
-  color: white;
-   width: 574px;
-   height: 69px;
-  padding: 25px;
-  border: none;
-  border-radius: 15px;
-  margin: 5px 0;
-  opacity: 0.85;
-  display: inline-block;
-  font-size: 17px;
-  line-height: 20px;
-  text-decoration: none; /* remove underline from anchors */
-}
-
+    border: 2px solid;
+    width: 150px;
+    height: 80px;
+  }
+  

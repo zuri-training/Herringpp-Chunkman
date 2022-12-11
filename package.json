@@ -2,10 +2,10 @@
   "name": "herringpp-chunkman",
   "version": "1.0.0",
   "description": "Chunk it - Team Herringpp",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "devstart": "nodemon server.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",

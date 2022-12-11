@@ -9,14 +9,14 @@ const app = express();
 
 app.use(express.json());
 
-// Register
+// signup
 app.post("/sign-up", (req, res) => {
     //register logic goes here...
-    });
+});
     
-    // Login
-    app.post("/sign-in", (req, res) => {
+// signin
+app.post("/sign-in", (req, res) => {
     //login logic goes here
-    });
+});
 
 module.exports = app;

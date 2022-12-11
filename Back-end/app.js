@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 // signup
-app.post("/sign-up", (req, res) => {
+app.post("/sign-up", async (req, res) => {
     // Our signup logic starts here
    try {
     // Get user input

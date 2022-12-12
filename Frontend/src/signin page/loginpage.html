@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log In</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="container">
-        <div class="logo">CHUNK IT</div>
-        <ul class="nav">
-          <li><a href="">HOME</a></li>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">CONTACT US</a></li>
-        </ul>
-      </div>
-    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chunk it</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <body>
+        <header>
+            <nav>
+                <img src="../images/Chunk it B.png" alt="" width="25%" class="image">
+                <ul>
+                    <li><a href="./signin.html" class="light-blue">Sign Up</a></li>
+                    <li><a href="#" class="blue">Log In</a></li>
+                </ul>
+            </nav>
+        </header> 
 
-    <div class="boy">
-      <div class="wel">
-        <h1>WELCOME BACK!</h1>
-        <p>Kindly provide your details below.</p>
-      </div>
+        <!-- Login form -->
+        <section class="Login-form">
+            <h1>Welcome back!</h1>
+            <p>kindly provide your details below.</p>
+            <div class="container">
+                <div class="form login">
+                    <div class="form-content">
+                        <form action="#">
+                            <div class="field input-field">
+                                <input type="email" placeholder="Email Address" class="input" required>
+                            </div>
+    
+                            <div class="field input-field">
+                                <input type="password" placeholder="Password" class="password" required>
+                                <i class='bx bx-hide eye-icon'></i>
+                            </div>
+                            <div class="field button-field" style="text-align: center;">
+                                <button type="submit">Login</button>
+                            </div>
+                            <p >or continue with</p>
 
-      <div class="section">
-        <form action="" class="section2">
-          <div class="input-box">
-            <input type="text" placeholder="Email Address" />
-          </div>
+                            <div class="media">
+                                <a href="#" class="field google">
+                                    <img src="../images/google.png" alt="" class="google-img" width="10%">
+                                    <span>Google</span>
+                                </a>
 
-          <div class="input-box">
-            <input type="text" placeholder="Password" />
-          </div>
+                                <div class="media">
+                                    <a href="#" class="field facebook">
+                                        <img src="../images/facebook.png" alt="" class="facebook-icon" width="8%">
+                                        <span>Facebook</span>
+                                    </a>
+                            </div>
 
-          <div class="btn">
-            <input type="submit" value="Log In" class="btn2" />
-          </div>
-          <br />
-          <div class="here">
-            <p>Or continue with;</p>
-          </div>
-
-
-          <div class="col">
-            <a href="#" class="fb btn">
-              <i class="fa fa-facebook fa-fw"></i>Facebook
-            </a>
-            <a href="#" class="google btn">
-              <i class="fa fa-google fa-fw"></i>Google+
-            </a>
-          </div>
-        </form>
-      </div>
-    </div>
-  </body>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
 </html>

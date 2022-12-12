@@ -60,7 +60,7 @@ app.post("/sign-up", async (req, res) => {
 });
     
 // signin
-aapp.post("/sign-in", async (req, res) => {
+app.post("/sign-in", async (req, res) => {
   try {
       //user input
       const { email, password } = req.body;

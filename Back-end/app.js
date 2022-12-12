@@ -1,6 +1,7 @@
 require("dotenv").config();
 require("./config/database").connect();
 const express = require("express");
+const mongoose = require
 
 // importing user context
 const User = require("./model/user");
@@ -59,8 +60,37 @@ app.post("/sign-up", async (req, res) => {
 });
     
 // signin
-app.post("/sign-in", (req, res) => {
-    //login logic goes here
-});
+app.post("/sign-in", async (req, res) => {
+    // Our signin logic starts here
+   try {
+    // Get user input
+    const { email, password } = req.body;
 
-module.exports = app;
+    // Validate user input
+    if (!(email && password)) {
+      res.status(400).send("All input is required");
+    }
+    // Validate if user exist in our database
+    const user = await User.findOne({ email });
+
+    if (user && (await bcrypt.compare(password, user.password))) {
+      // Create token
+      const token = jwt.sign(
+        { user_id: user._id, email },
+        process.env.TOKEN_KEY,
+        {
+          expiresIn: "6h",
+        }
+      );
+
+      // save user token
+      user.token = token;
+
+      // user
+      return res.status(200).json(user);
+    }
+    return res.status(400).send("Invalid Credentials");
+  } catch (err) {
+    consolelog(err)
+  }
+});

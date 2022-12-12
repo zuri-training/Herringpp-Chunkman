@@ -1,7 +1,8 @@
 require("dotenv").config();
 require("./config/database").connect();
 const express = require("express");
-const mongoose = require
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
 
 // importing user context
 const User = require("./model/user");
@@ -93,3 +94,5 @@ app.post("/sign-in", async (req, res) => {
       console.log(err);
   }
 });
+
+module.exports = app;

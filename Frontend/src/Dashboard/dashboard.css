@@ -1,6 +1,6 @@
 html {
-    font-family: sans-serif;
-    background: linear-gradient(to bottom, white, blue);
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 47.4%, #5C97CE 99.99%, #FFFFFF 100%);
+    font-family: "Montserrat", Arial;
   }
   nav {
     display: flex;

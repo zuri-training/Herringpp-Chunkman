@@ -4,16 +4,20 @@ const express = require("express");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
+const auth = require("./middleware/auth");
+
 // importing user context
+const cors = require("cors") 
 const User = require("./model/user");
 const app = express();
 
-app.use(express.json());
+app.use(cors())
+
+app.use(express.json({ limit: "50mb" }));
 
 // signup
 app.post("/sign-up", async (req, res) => {
-    // Our signup logic starts here
-   try {
+  try {
     // Get user input
     const { firstName, lastName, email, password } = req.body;
 
@@ -57,42 +61,56 @@ app.post("/sign-up", async (req, res) => {
   } catch (err) {
     console.log(err);
   }
-  //signup logic ends here
 });
-    
+
 // signin
 app.post("/sign-in", async (req, res) => {
   try {
-      //user input
-      const { email, password } = req.body;
+    //user input
+    const { email, password } = req.body;
 
-      // Check if any of the input is blank.
-      if (!(email && password)) {
-          res.status(400).send("All input is required");
-      }
-      // Validate user
-      const user = await User.findOne({ email });
+    // Check if any of the input is blank.
+    if (!(email && password)) {
+      res.status(400).send("All input is required");
+    }
+    // Validate user
+    const user = await User.findOne({ email });
 
-      if (user && (await bcrypt.compare(password, user.password))) {
-          // Create token
-          const token = jwt.sign(
-              { user_id: user._id, email },
-              process.env.TOKEN_KEY,
-              {
-                  expiresIn: "6h",
-              }
-          );
+    if (user && (await bcrypt.compare(password, user.password))) {
+      // Create token
+      const token = jwt.sign(
+        { user_id: user._id, email },
+        process.env.TOKEN_KEY,
+        {
+          expiresIn: "6h",
+        }
+      );
 
-          // save user token
-          user.token = token;
+      // save user token
+      user.token = token;
 
-          // sending back user
-          res.status(200).json(user);
-      }
-      res.status(400).send("Invalid Credentials");
+      // sending back user
+      res.status(200).json(user);
+    }
+    res.status(400).send("Invalid Credentials");
   } catch (err) {
-      console.log(err);
+    console.log(err);
   }
+});
+
+app.post("/home", auth, (req, res) => {
+  res.status(200).send("Welcome to Chunkit");
+});
+
+app.use("*", (req, res) => {
+  res.status(404).json({
+    success: "false",
+    message: "Page not found",
+    error: {
+      statusCode: 404,
+      message: "You reached a route that is not defined on this server",
+    },
+  });
 });
 
 module.exports = app;

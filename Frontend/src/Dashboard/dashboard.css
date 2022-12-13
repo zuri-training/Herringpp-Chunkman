@@ -1,7 +1,7 @@
 html {
-    font-family: sans-serif;
-    background: linear-gradient(to bottom, white, blue);
-  }
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 47.4%, #5C97CE 99.99%, #FFFFFF 100%);
+    font-family: "Montserrat", Arial;}
+  
   nav {
     display: flex;
     align-items: center;
@@ -34,10 +34,6 @@ html {
     font-size: 18px;
   }
   
-  nav a:hover,
-  nav a.active {
-    background-color: #111;
-  }
   #container {
     width: calc(100% - 200px);
     float: left;

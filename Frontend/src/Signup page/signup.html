@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chunk it</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./signup.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <body>
+        <header>
+            <nav>
+                <img src="../images/Chunk it B.png" alt="" width="25%" class="image">
+                <ul>
+                    <li><a href="./signup.html" class="light-blue">Sign Up</a></li>
+                    <li><a href="/Frontend/src/signin page/signin.html" class="blue">Sign In</a></li>
+                </ul>
+            </nav>
+        </header> 
+
+        <!-- Sign up form -->
+        <section class="sign-form">
+            <h1>Welcome!</h1>
+            <p>kindly provide your details below.</p>
+            <div class="container">
+                <div class="form sign">
+                    <div class="form-content">
+                        <form action="#" id="signup">
+                            <div class="field input-field">
+                                <input type="text" name="fullname" placeholder="Full Name" class="input" required>
+                            </div>
+
+                            <div class="field input-field">
+                                <input type="email" name="email" placeholder="Email Address" class="input" required>
+                            </div>
+    
+                            <div class="field input-field">
+                                <input type="password" name="password" placeholder="Password" class="password" required>
+                                <i class='bx bx-hide eye-icon'></i>
+
+                            </div>
+
+                            <div class="field input-field">
+                                <input type="password" name="cpassword" placeholder="Confirm Password" class="password" required>
+                                <i class='bx bx-hide eye-icon'></i>
+                            </div>
+
+                            <div class="field button-field"  style="text-align: center;">
+                                <button type="submit">Sign Up</button>
+                            </div>
+                            <div class="log">
+                            <p>Already have an account? <a href="./loginpage.html">LOG IN</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="./signup.js"></script>
+        <script src="../script.js"></script>
+</body>
+</html>

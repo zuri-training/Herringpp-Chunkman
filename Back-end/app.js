@@ -4,6 +4,8 @@ const express = require("express");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
+const auth = require("./middleware/auth");
+
 // importing user context
 const cors = require("cors") 
 const User = require("./model/user");
@@ -95,8 +97,6 @@ app.post("/sign-in", async (req, res) => {
     console.log(err);
   }
 });
-
-const auth = require("./middleware/auth");
 
 app.post("/home", auth, (req, res) => {
   res.status(200).send("Welcome to Chunkit");

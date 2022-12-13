@@ -29,23 +29,23 @@
             <div class="container">
                 <div class="form sign">
                     <div class="form-content">
-                        <form action="#">
+                        <form action="#" id="signup">
                             <div class="field input-field">
-                                <input type="text" placeholder="Full Name" class="input" required>
+                                <input type="text" name="fullname" placeholder="Full Name" class="input" required>
                             </div>
 
                             <div class="field input-field">
-                                <input type="email" placeholder="Email Address" class="input" required>
+                                <input type="email" name="email" placeholder="Email Address" class="input" required>
                             </div>
     
                             <div class="field input-field">
-                                <input type="password" placeholder="Password" class="password" required>
+                                <input type="password" name="password" placeholder="Password" class="password" required>
                                 <i class='bx bx-hide eye-icon'></i>
 
                             </div>
 
                             <div class="field input-field">
-                                <input type="password" placeholder="Confirm Password" class="password" required>
+                                <input type="password" name="cpassword" placeholder="Confirm Password" class="password" required>
                                 <i class='bx bx-hide eye-icon'></i>
                             </div>
 
@@ -60,5 +60,8 @@
                 </div>
             </div>
         </section>
+
+        <script src="./signup.js"></script>
+        <script src="../script.js"></script>
 </body>
 </html>

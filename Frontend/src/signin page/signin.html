@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="./signin.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 <body>
     <body>
@@ -16,24 +15,20 @@
             <nav>
                 <img src="../images/Chunk it B.png" alt="" width="25%" class="image">
                 <ul>
-                    <li><a href="#" class="light-blue">Sign Up</a></li>
-                    <li><a href="./loginpage.html" class="blue">Log In</a></li>
+                    <li><a href="../Signup page/signup.html" class="light-blue">Sign Up</a></li>
+                    <li><a href="./signin.css" class="blue">Sign in</a></li>
                 </ul>
             </nav>
         </header> 
 
-        <!-- Sign up form -->
-        <section class="sign-form">
-            <h1>Welcome!</h1>
+        <!-- Login form -->
+        <section class="Login-form">
+            <h1>Welcome back!</h1>
             <p>kindly provide your details below.</p>
             <div class="container">
-                <div class="form sign">
+                <div class="form login">
                     <div class="form-content">
                         <form action="#">
-                            <div class="field input-field">
-                                <input type="text" placeholder="Full Name" class="input" required>
-                            </div>
-
                             <div class="field input-field">
                                 <input type="email" placeholder="Email Address" class="input" required>
                             </div>
@@ -41,20 +36,25 @@
                             <div class="field input-field">
                                 <input type="password" placeholder="Password" class="password" required>
                                 <i class='bx bx-hide eye-icon'></i>
+                            </div>
+                            <div class="field button-field" style="text-align: center;">
+                                <button type="submit">Login</button>
+                            </div>
+                            <p >or continue with</p>
 
+                            <div class="media">
+                                <a href="#" class="field google">
+                                    <img src="../images/google.png" alt="" class="google-img" width="10%">
+                                    <span>Google</span>
+                                </a>
+
+                                <div class="media">
+                                    <a href="#" class="field facebook">
+                                        <img src="../images/facebook.png" alt="" class="facebook-icon" width="8%">
+                                        <span>Facebook</span>
+                                    </a>
                             </div>
 
-                            <div class="field input-field">
-                                <input type="password" placeholder="Confirm Password" class="password" required>
-                                <i class='bx bx-hide eye-icon'></i>
-                            </div>
-
-                            <div class="field button-field"  style="text-align: center;">
-                                <button type="submit">Sign Up</button>
-                            </div>
-                            <div class="log">
-                            <p>Already have an account? <a href="./loginpage.html">LOG IN</a></p>
-                            </div>
                         </form>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 html {
     font-family: sans-serif;
-    background: linear-gradient(to bottom, white, blue);
+    background: rgb(241, 240, 240);
   }
   nav {
     display: flex;
@@ -34,10 +34,6 @@ html {
     font-size: 18px;
   }
   
-  nav a:hover,
-  nav a.active {
-    background-color: #111;
-  }
   #container {
     width: calc(100% - 200px);
     float: left;

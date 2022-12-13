@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-.sing-form {
+.Login-form {
     height: 100vh;
 }
 
-.sign-form h1{
+.Login-form h1{
  color: #3B39A9;
  font-weight: 800;
  font-size: 32px;
@@ -19,7 +19,7 @@
  margin-top: 1rem;
 }
 
-.sign-form p {
+.Login-form p {
   text-align: center;
   color: #131313;
   margin-bottom: 2.5rem;
@@ -35,17 +35,16 @@
 
 .form{
     background-color: #fff;
-    padding: 50px;
+    padding: 40px;
     box-shadow: 5px 7px 15px 2px rgba(0, 0, 0, 0.15);
     border-radius: 22px;
-    margin-bottom: 2rem;
 }
 
-form.field  {
+form .field  {
     position: relative;
-    height: 10px;
+    height: 100px;
     width: 100%;
-    margin: 15px;
+    margin: 10px;
     color: rgba(19, 19, 19, 0.5);
 }
 
@@ -63,12 +62,12 @@ form.field  {
 
 .field input {
     background: #FAFAFA;
-    border: 3px solid #3B39A9;;
+    border: 3px solid #3B39A9;
     border-radius: 15px;
     padding: 0 15px;
     width: 574px;
     height: 70px;
-    margin: 20px;
+    margin: 10px;
     outline: none;
     font-size: 20px;
 }
@@ -83,10 +82,42 @@ form.field  {
     cursor: pointer;
 }
 
-.log p {
-    color: rgba(19, 19, 19, 0.5);
+.media a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.log a {
+a.google,
+a.facebook {
+    color: rgba(21, 21, 21, 0.8);
+    background: white;
+    box-shadow: 5px 7px 15px 2px rgb(0 0 0 / 15%);
+    outline: none;
+    border-radius: 15px;
+    padding: 0 15px;
+    width: 574px;
+    height: 70px;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 35px;
+}
+
+.facebook-icon ,
+img.google-img{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+img .google-img {
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+
+a.google,
+a.facebook span {
     color: #3B39A9;
 }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="select.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">
+      <span class="material-symbols-outlined" style="font-size: 50px;">
+        arrow_back
+      </span></a>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="#" onclick="toggleNotifications()">
+          <span class="material-symbols-outlined">notifications </span> Notifications</a></li>
+      <li><a href="team.html"><span class="material-symbols-outlined">account_circle
+          </span> Team Herrinpp</a></li>
+    </ul>
+  </nav>
+  <section>
+    <div class="file-select">
+      <div>
+        <h4>CLICK TO UPLOAD FILE</h4>
+        <input type="file">
+        </input>
+      </div>
+    </div>
+    <div class="select-section">
+      <div>
+        <select>
+          <option>
+            SELECT CHUNK SIZE 
+            </option>
+          <option>
+            5mb
+          </option>
+          <option>
+            10mb
+          </option>
+          <option>
+            15mb
+            </option>
+        </select>
+      </div>
+    </div>
+    <div class="btn-container">
+      <button class="btn">
+        <a href="#">Chunk File</a>
+      </button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 html {
-    font-family: sans-serif;
-    background: rgb(241, 240, 240);
-  }
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 47.4%, #5C97CE 99.99%, #FFFFFF 100%);
+    font-family: "Montserrat", Arial;}
+  
   nav {
     display: flex;
     align-items: center;

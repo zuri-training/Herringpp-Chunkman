@@ -13,6 +13,6 @@ async function fetchAPI(data, endpoint, method){
         const result = await response.json()
         console.log(result)
     } catch (error) {
-
+        console.log(error)
     }
 }

@@ -1,4 +1,4 @@
-const API = 'http://localhost:5000/chunkit/'
+const API = 'http://localhost:5000/api/auth'
 
 async function fetchAPI(data, endpoint, method){
     try{

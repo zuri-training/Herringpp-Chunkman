@@ -15,7 +15,7 @@ function registerUser(event){
         confirmPassword
     };
     
-    fetchAPI(userObj, 'users/signup', 'POST')
+    fetchAPI(userObj, 'sign-up', 'POST')
 }
 
 signupForm.addEventListener('submit', registerUser)

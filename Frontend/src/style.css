@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap');
  
  
  * {
@@ -6,32 +6,26 @@
     padding: 0;
     box-sizing: border-box;
   }
-  body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    background-color: #FAFAFA;
-    mix-blend-mode: darken;
-
-    /* background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 47.4%, #5C97CE 99.99%, #FFFFFF 100%);
-    background-size: cover; */
-  }
-   nav .image {
+   .image {
     top: -5px;
      margin-left: -95px;
-
-
   }
+
+body {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 47.4%, #5C97CE 99.99%, #FFFFFF 100%);
+
+}
 
   nav {
     width: 100%;
-    height: 10vh;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: .5rem;
     padding-left: 5%;
     margin: 10px 0 40px 0;
+    mix-blend-mode: darken;
 }
 nav ul li {
     display: inline-block;
@@ -40,10 +34,12 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #131313;
+  font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
     font-size: 20px; 
+    color: #131313;
     text-decoration: none;
-    font-weight: bold;
     text-transform: capitalize;
     cursor: pointer;
 }
@@ -66,27 +62,38 @@ nav ul li .blue {
 }
 
 /* main */
+.intro {
+  height: 70vh;
+}
 
 .intro h1 {
-  color: #3B39A9;
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 800;
  font-size: 38px;
+  color: #3B39A9;
  line-height: 46px;
  text-align: center;
  text-transform: uppercase;
  padding: 5em 1.5em 0.5em 1.5em;
 }
 .intro p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
   text-align: center;
   color: #4C0C0C;
   padding-bottom: 5rem;
 }
  .register {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
   background: #3B39A9;
   box-shadow: 0px 0px 6px #121055;
   border-radius: 15px;
   color: #fff;
-  padding: 15px 35px;
+  padding: 21px 69px;
   text-decoration: none;
 }
 
@@ -94,10 +101,129 @@ nav ul li .blue {
 .doc {
   color: #3B39A9;
   margin: 30px;
+  padding-bottom: 7em;
 }
 .doc h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
   margin-left: 20px;
+  font-size: 48px;
+  display: flex;
+  justify-content: space-around;
 }
-.doc h1 a {
-  top: 30%;
+
+
+/* review */
+.review {
+  height: 50vh;
+}
+.reviews {
+height: 435px;
+border: 1px solid #A8A8A3;
+}
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.anonymous {
+  height: 250px;
+  width: 335px;
+  padding: 10px 35px;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid #131313;
+  margin: 25px;
+}
+.reviews h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  color: #3B39A9;
+  padding-top: 3rem;
+}
+
+.reviews h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #3B39A9;
+  padding: 0.5em 1em;
+  
+}
+.reviews p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.6px;
+  color: #131313;
+ 
+}
+footer {
+  height: 100vh;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  mix-blend-mode: darken;
+  margin-bottom: 3em;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contact,
+.resources,
+.socials {
+  font-size: 14px;
+  line-height: 19px;
+  width: 100%;
+
+}
+.contact p,
+.resources p {
+  text-decoration-line: underline;
+}
+.contact li,
+.resources li {
+  list-style: none;
+}
+.contact li a {
+  text-decoration: none;
+  color: #131313;
+}
+.socials p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding-left: 5.5em;
+
+}
+.socials a {
+  margin: 20px;
+  text-decoration: none;
+}
+.socials .facebook {
+  border: 1.5px solid #131313;
+  border-radius: 8px;
+  width: 5%;
+  padding: 2px 5px;
+}
+.text {
+font-size: 20px;
+line-height: 27px;
+color: #263238;
+width: 15%;
+padding: 0 2em;
+}
+.team {
+  padding: 2em;
+  font-size: 20px;
+  color: #131313;
 }

@@ -1,0 +1,38 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+chunkit_frontend/node_modules
+Back-end/node_modules
+chunkit_frontend/.pnp
+chunkit_frontend/.pnp.js
+
+# testing
+/coverage
+
+# next.js
+chunkit_frontend/.next/
+chunkit_frontend/out/
+
+# production
+chunkit_frontend/build
+
+# misc
+chunkit_frontend/.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+chunkit_frontend/.env*.local
+chunkit_frontend/.env
+
+# vercel
+chunkit_frontend/.vercel
+
+# typescript
+chunkit_frontend/*.tsbuildinfo
+chunkit_frontend/next-env.d.ts

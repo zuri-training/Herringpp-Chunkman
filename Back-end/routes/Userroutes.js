@@ -1,5 +1,9 @@
 const express = require("express");
 const router = express.Router();
+const User = require("./model/user");
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
+const auth = require("./middleware/auth");
 
 router.use(express.json({ limit: "50mb" }));
 

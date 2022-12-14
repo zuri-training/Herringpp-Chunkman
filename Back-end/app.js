@@ -3,14 +3,12 @@ require("./config/database").connect();
 const express = require("express");
 
 // importing user context
-const cors = require("cors") 
 const app = express();
-const userRoute = require("./routes/Userroutes")
+const userRoute = require("./routes/Userroutes");
 
-app.use('/api/auth', userRoute)
-app.use(cors())
+app.use("/api/auth", userRoute);
+
 app.use(express.json({ limit: "50mb" }));
-
 
 app.use("*", (req, res) => {
   res.status(404).json({

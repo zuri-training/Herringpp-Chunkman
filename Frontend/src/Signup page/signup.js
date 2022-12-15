@@ -8,7 +8,7 @@ function registerUser(event){
     let password = event.target.password.value;
     let confirmPassword = event.target.cpassword.value;
 
-    if(!fullname && !email && !password ) {
+    if(!fullname || !email || !password ) {
         alert('All fields required')
         return;
     }

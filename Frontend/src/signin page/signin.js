@@ -9,7 +9,7 @@ function signinUser(event){
     let email = event.target.email.value;
     let password = event.target.password.value;
 
-    if(!fullname && !email && !password ) {
+    if(!fullname || !email || !password ) {
         alert('All fields required')
         return;
     }
@@ -28,4 +28,4 @@ function signinUser(event){
     });
 }
 
-signinForm.addEventListener('submit', loginUser)
+signinForm.addEventListener('submit', signinUser)

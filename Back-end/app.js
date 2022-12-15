@@ -3,7 +3,7 @@ require("./config/database").connect();
 const express = require("express");
 
 // importing user context
-const app = express();
+const app = express(); 
 const userRoute = require("./routes/Userroutes");
 
 app.use("/api/auth", userRoute);

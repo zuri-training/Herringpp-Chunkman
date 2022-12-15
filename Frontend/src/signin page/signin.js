@@ -1,5 +1,8 @@
 const signinForm = document.getElementById('signin');
 
+// if (!localStorage.getItem('token')) {
+//     window.location.href = "../signin page/signin.html";
+// }
 
 function signinUser(event){
     event.preventDefault();

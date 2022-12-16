@@ -8,10 +8,11 @@ const port = process.env.PORT || API_PORT;
 
 // listening to server
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "http://localhost:5500",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
+
 
 app.use(cors(corsOptions));
 

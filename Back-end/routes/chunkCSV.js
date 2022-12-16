@@ -1,10 +1,11 @@
 const express = require('express');
+const router = express.Router();
 const csv = require('csv-parser');
 const fs = require('fs');
 
-const app = express();
+router.use(express.json());
 
-app.get('/split/:filename', (req, res) => {
+router.get('/split/CSV', (req, res) => {
   const filename = req.params.filename;
 
   // Read the CSV file
@@ -24,3 +25,4 @@ app.get('/split/:filename', (req, res) => {
 });
 
 
+module.exports = router;

@@ -5,6 +5,7 @@ const express = require("express");
 // importing user context
 const app = express(); 
 const userRoute = require("./routes/Userroutes");
+const splitCSV = require("./routes/chunkCSV");
 
 app.use("/api/auth", userRoute);
 

@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken");
 const auth = require("../middleware/auth");
 const Joi = require("@hapi/joi")
 
-router.use(express.json({ limit: "50mb" }));
+router.use(express.json());
 
 router.post("/sign-up", async (req, res) => {
   try { 

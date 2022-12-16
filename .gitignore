@@ -36,3 +36,5 @@ chunkit_frontend/.vercel
 # typescript
 chunkit_frontend/*.tsbuildinfo
 chunkit_frontend/next-env.d.ts
+
+undefined.csv

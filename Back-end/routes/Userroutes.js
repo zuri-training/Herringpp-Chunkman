@@ -18,13 +18,13 @@ router.post("/sign-up", async (req, res) => {
       res.status(400).send("All input is required");
     }
 
-    const schema = Joi.object({
-      fullName: Joi.string().min(6).required(),
-      email: Joi.string().min(6).required.email(),
-      password: Joi.string().min(6).required()
-    });
+    // const schema = Joi.object({
+    //   fullName: Joi.string().min(6).required(),
+    //   email: Joi.string().min(6).required.email(),
+    //   password: Joi.string().min(6).required()
+    // });
 
-    res.send(schema.validate(req.body))
+    // res.send(schema.validate(req.body))
 
     // Validate if user exist in our database
     const oldUser = await User.findOne({ email });
@@ -38,7 +38,7 @@ router.post("/sign-up", async (req, res) => {
 
     // Create user in our database
     const user = await User.create({
-      full_name: fullName,
+      fullname: fullName,
       email: email.toLowerCase(), // sanitize
       password: encryptedUserPassword,
     });
@@ -88,7 +88,14 @@ router.post("/sign-in", async (req, res) => {
       user.token = token;
 
       // sending back user
-      res.status(200).json(user);
+      res.status(200).json({
+        status: "Login successful",
+        data: {
+          user
+        },
+      });
+
+
     }
     res.status(400).send("Invalid Credentials");
   } catch (err) {

@@ -4,7 +4,7 @@ const fs = require('fs');
 
 router.use(express.json());
 
-router.get('/split/JSON', (req, res) => {
+router.get('/JSON/:filename', (req, res) => {
   const filename = req.params.filename;
 
   // Read the JSON file
@@ -16,7 +16,7 @@ router.get('/split/JSON', (req, res) => {
     const jsonData = JSON.parse(data);
 
     // Split the data into chunks and write each chunk to a new file
-    const chunkSize = 1000; // Adjust this value to control the size of the chunks
+    const chunkSize = 100; // Adjust this value to control the size of the chunks
     for (let i = 0; i < jsonData.length; i += chunkSize) {
       fs.writeFileSync(`./chunks/${filename}-${i}.json`, JSON.stringify(jsonData.slice(i, i + chunkSize)));
     }

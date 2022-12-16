@@ -1,5 +1,5 @@
-const API = 'http://localhost:4000/api/auth'
-const splitCSV = 'http://localhost:4000/api/'
+const API = 'https://chunkit.onrender.com/api/auth/'
+const splitCSV = 'https://chunkit.onrender.com/api/'
 
 async function fetchAPI(data, endpoint, method){
     try{
@@ -17,3 +17,4 @@ async function fetchAPI(data, endpoint, method){
         console.log(error);
     }
 }
+

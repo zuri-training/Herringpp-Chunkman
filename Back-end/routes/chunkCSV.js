@@ -5,7 +5,7 @@ const fs = require('fs');
 
 router.use(express.json());
 
-router.get('/split/CSV', (req, res) => {
+router.get('/CSV/:filename', (req, res) => {
   const filename = req.params.filename;
 
   // Read the CSV file

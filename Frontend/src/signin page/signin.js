@@ -1,15 +1,19 @@
 const signinForm = document.getElementById('signin');
 
+
+
 // if (!localStorage.getItem('token')) {
 //     window.location.href = "../signin page/signin.html";
 // }
 
 function signinUser(event){
     event.preventDefault();
-    let email = event.target.email.value;
-    let password = event.target.password.value;
+    let email = document.getElementById('emailAU').value;
+    let password = document.getElementById('passwordAU').value;
 
-    if(!fullname || !email || !password ) {
+    // console.log(email, password);
+
+    if(!email || !password ) {
         alert('All fields required')
         return;
     }
@@ -19,13 +23,9 @@ function signinUser(event){
         password
     };
     
-    fetchAPI(userObj, 'sign-in', 'POST').then(data => {
-        if(data.status){
-            window.location.href = "../Dashboard/dashboard.html"
-        } else {
-            alert(data.message);
-        }
-    });
+    fetchAPI(userObj, 'sign-in', 'POST').then((data) => {
+        console.log(data);
+    })
 }
 
 signinForm.addEventListener('submit', signinUser)

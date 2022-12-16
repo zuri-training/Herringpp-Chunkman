@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -22,27 +24,25 @@ ul {
     color: #FAFAFA;
     text-decoration: none;
     font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
 li {
     background-color: #3B39A9;
-    border: 1px solid;
+    border: 1px solid #3B39A9;
     margin: 5px;
     padding: 10px;
     width: 247px;
     text-align: center;
-
-
 }
 
 .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
+
 .logo {
     padding-top: 13px;
 }
@@ -55,23 +55,29 @@ li {
     color: #3B39A9;
     font-weight: 700;
     font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
     line-height: 39px;
     align-items: center;
     text-align: center;
+    margin:20px;
 }
 
 .head-2 {
     font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 29px;
     text-align: center;
 }
 
 .section {
-    border: solid 2px #455A64;
+    border: solid 2px #FFFFFF;
     width: 70%;
     margin: auto;
     margin-top: 20px;
+    border-radius: 22px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 7px 15px 2px rgba(0, 0, 0, 0.15);
 
 }
 
@@ -85,6 +91,7 @@ input {
     border-radius: 10px;
     padding: 20px 16px;
     width: 700px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -102,8 +109,10 @@ textarea {
     border-radius: 10px;
     border: 1px solid #A8A8A3;
     padding: 20px 16px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #A8A8A3;
+    margin: 10px 0 10px 0;
 }
 
 .btn {
@@ -120,9 +129,9 @@ textarea {
 label {
     font-weight: 400;
     font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
     line-height: 20px;
     text-align: right;
-
 }
 
 .foot {
@@ -130,43 +139,60 @@ label {
     justify-content: space-around;
     align-items: center;
     padding: 30px;
-
 }
 
 footer {
-    width: 1200px;
-    
-}
-
-.chunk .p{
-    font-weight: 500;
-    padding: 20px;
-    font-size: 12px;
-}
-
-.contact {
-    margin-bottom: 30px;
-    font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 16px;
+    color: #000000;
+    padding: 40px;
 }
 
-.resources {
-    font-weight: 400;
-    font-size: 20px;
+#contact li {
+    background-color: #FFFFFF;
+    color: #3B39A9;
+    border: 1px solid #3B39A9;
 }
 
-.socials {
-    font-size: 20px;
-    text-align: center;
-   
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+ .logo {
+    display: none;
+ }
+
+ ul {
+    margin-left: 200px;
 }
 
-.socials img {
-  margin-left: 20px;
-  padding: 30px 0 30px 0;
+.navbar a {
+    font-size: 11px;
 }
 
-.copy {
-    padding-left: 70px;
+li {
+    margin: 5px;
+    width: 127px;
+}
+
+.section {
+    width: 690px;
+}
+input{
+    width: 600px;
+}
+textarea {
+    width: 600px;
+    height: 255px;
+}
+.msg {
+    flex-direction: column;
+}
+
+.btn {
+    align-self: center;
+    width: 287px;
+}
 }

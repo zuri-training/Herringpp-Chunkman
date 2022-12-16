@@ -8,6 +8,11 @@ function registerUser(event){
     let password = event.target.password.value;
     let confirmPassword = event.target.cpassword.value;
 
+    if(!fullname || !email || !password ) {
+        alert('All fields required')
+        return;
+    }
+
     let userObj ={
         fullname,
         email,
@@ -15,7 +20,13 @@ function registerUser(event){
         confirmPassword
     };
     
-    fetchAPI(userObj, 'users/signup', 'POST')
+    fetchAPI(userObj, 'sign-up', 'POST').then(data => {
+        if(data.status){
+            window.location.href = "../signin page/signin.html"
+        } else {
+            alert(data.message);
+        }
+    });
 }
 
 signupForm.addEventListener('submit', registerUser)

@@ -4,20 +4,28 @@ const User = require("../model/user");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const auth = require("../middleware/auth");
+const Joi = require("@hapi/joi")
 
 router.use(express.json({ limit: "50mb" }));
 
 router.post("/sign-up", async (req, res) => {
   try { 
     // Get user input
-    const { firstName, lastName, email, password } = req.body;
+    const { fullName, email, password } = req.body;
 
-    // Validate user inputE
-    if (!(email && password && firstName && lastName)) {
+    // Validate user input
+    if (!(email && password && fullName)) {
       res.status(400).send("All input is required");
     }
 
-    // check if user already exist
+    const schema = Joi.object({
+      fullName: Joi.string().min(6).required(),
+      email: Joi.string().min(6).required.email(),
+      password: Joi.string().min(6).required()
+    });
+
+    res.send(schema.validate(req.body))
+
     // Validate if user exist in our database
     const oldUser = await User.findOne({ email });
 
@@ -26,12 +34,11 @@ router.post("/sign-up", async (req, res) => {
     }
 
     //Encrypt user password
-    encryptedUserPassword = await bcrypt.hash(password, 10);
+    const encryptedUserPassword = await bcrypt.hash(password, 10);
 
     // Create user in our database
     const user = await User.create({
-      first_name: firstName,
-      last_name: lastName,
+      full_name: fullName,
       email: email.toLowerCase(), // sanitize
       password: encryptedUserPassword,
     });

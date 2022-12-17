@@ -25,7 +25,7 @@ function signinUser(event){
     
     fetchAPI(userObj, 'sign-in', 'POST').then((data) => {
         if(data.status){
-            window.location.href = '../'
+            window.location.href = "../Dashboard/dashboard.html"
         } else {
             alert(data.message);
         }

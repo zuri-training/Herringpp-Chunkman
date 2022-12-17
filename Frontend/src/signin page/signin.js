@@ -24,8 +24,12 @@ function signinUser(event){
     };
     
     fetchAPI(userObj, 'sign-in', 'POST').then((data) => {
-        console.log(data);
-    })
+        if(data.status){
+            window.location.href = '../'
+        } else {
+            alert(data.message);
+        }
+    });
 }
 
 signinForm.addEventListener('submit', signinUser)

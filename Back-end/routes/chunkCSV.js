@@ -20,7 +20,7 @@ router.get('/CSV/:filename', (req, res) => {
     })
     .on('end', () => {
       // Send a response to the client when the CSV has been successfully split
-      res.send('CSV file successfully split');
+      res.send('CSV file successfully splitted');
     });
 });
 

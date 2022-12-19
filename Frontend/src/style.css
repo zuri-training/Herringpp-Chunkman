@@ -10,11 +10,9 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 600;
-    background-color: #FAFAFA;
-    mix-blend-mode: darken;
-
-    /* background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 47.4%, #5C97CE 99.99%, #FFFFFF 100%);
-    background-size: cover; */
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 47.4%, #5C97CE 99.99%, #FFFFFF 100%);
+    height: 100vh;
+ 
   }
 
   nav .image {
@@ -113,6 +111,67 @@ nav ul li .blue {
   font-size: 24px;
 }
 
-/* .arrow{
+/* review */
+.review {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 15px;
+
+}
+.reviews {
+ background: #FAFAFA; 
+}
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.anonymous {
+  height: 250px;
+  width: 255px;
+  padding: 10px 15px;
+  background: #FAFAFA;
+  border-radius: 10px;
+  box-shadow: #131313;
+  border: 1px solid #FAFAFA;
+  margin: 25px;
+}
+.reviews h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  color: #3B39A9;
+  padding-top: 3rem;
+}
+
+.reviews h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #3B39A9;
+  padding: 0.5em 1em;
   
-} */
+}
+.reviews p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.6px;
+  color: #131313;
+ 
+}
+.team{
+display: flex;  
+justify-content: center;
+bottom: 0%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+}

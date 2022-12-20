@@ -78,3 +78,49 @@ html {
     color: black;
     padding: 20px;
   }
+  #download-history {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .download {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  
+  .download:last-child {
+    margin-bottom: 0;
+  }
+  
+  .download .file-name,
+  .download .date {
+    flex: 1;
+    padding: 8px;
+  }
+  
+  .download .file-name {
+    font-weight: bold;
+  }
+  
+  .download:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .download:hover {
+    background-color: #ddd;
+  }
+  
+  .download .file-name {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .download .date {
+    border-left: 1px solid #ddd;
+    border-radius: 0 4px 4px 0;
+  }
+  

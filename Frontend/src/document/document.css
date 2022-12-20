@@ -78,3 +78,18 @@ html {
     color: black;
     padding: 20px;
   }
+  .document {
+    display: flex;
+    align-items: center;
+    margin: 16px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .document-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 16px;
+  }
+  

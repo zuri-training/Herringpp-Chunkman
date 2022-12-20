@@ -78,3 +78,20 @@ html {
     color: black;
     padding: 20px;
   }
+  .saved-files-template {
+    display: flex;
+  }
+  
+  .saved-file {
+    width: 25px;
+    border: 2px solid;
+  }
+  
+  .saved-file-name {
+    /* styles for the saved file name */
+  }
+  
+  .saved-file-date {
+    /* styles for the saved file date */
+  }
+  

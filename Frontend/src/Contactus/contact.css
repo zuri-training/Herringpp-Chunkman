@@ -124,6 +124,7 @@ textarea {
     border: 1px solid #A8A8A3;
     border-radius: 10px;
     align-self: flex-end;
+    cursor: pointer;
 }
 
 label {

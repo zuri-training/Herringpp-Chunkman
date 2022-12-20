@@ -1,0 +1,95 @@
+html {
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 47.4%, #5C97CE 99.99%, #FFFFFF 100%);
+    font-family: "Montserrat", Arial;}
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav .logo {
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    background-color: #3b39a9;
+    margin-right: 15px;
+    width: 210px;
+    padding: 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  
+  #container {
+    width: calc(100% - 200px);
+    float: left;
+    display: flex;
+  }
+  aside {
+    width: 20%;
+    background-color: #eee;
+    margin-right: 55px;
+  }
+  #side-nav-1,
+  #side-nav {
+    width: 200px;
+    float: left;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+  
+  #side-nav-1 h1,
+  #side-nav h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  #side-nav-1 ul,
+  #side-nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #side-nav-1 li,
+  #side-nav li {
+    padding: 10px;
+  }
+  
+  #side-nav-1 a,
+  #side-nav a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+  }
+  .document {
+    display: flex;
+    align-items: center;
+    margin: 16px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .document-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 16px;
+  }
+  

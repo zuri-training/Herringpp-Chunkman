@@ -1,0 +1,126 @@
+html {
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 47.4%, #5C97CE 99.99%, #FFFFFF 100%);
+    font-family: "Montserrat", Arial;}
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav .logo {
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    background-color: #3b39a9;
+    margin-right: 15px;
+    width: 210px;
+    padding: 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  
+  #container {
+    width: calc(100% - 200px);
+    float: left;
+    display: flex;
+  }
+  aside {
+    width: 20%;
+    background-color: #eee;
+    margin-right: 55px;
+  }
+  #side-nav-1,
+  #side-nav {
+    width: 200px;
+    float: left;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+  
+  #side-nav-1 h1,
+  #side-nav h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  #side-nav-1 ul,
+  #side-nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #side-nav-1 li,
+  #side-nav li {
+    padding: 10px;
+  }
+  
+  #side-nav-1 a,
+  #side-nav a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+  }
+  #download-history {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .download {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  
+  .download:last-child {
+    margin-bottom: 0;
+  }
+  
+  .download .file-name,
+  .download .date {
+    flex: 1;
+    padding: 8px;
+  }
+  
+  .download .file-name {
+    font-weight: bold;
+  }
+  
+  .download:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .download:hover {
+    background-color: #ddd;
+  }
+  
+  .download .file-name {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .download .date {
+    border-left: 1px solid #ddd;
+    border-radius: 0 4px 4px 0;
+  }
+  

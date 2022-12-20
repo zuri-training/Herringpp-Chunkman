@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="saved.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /></head>
+
+    <title>Saved files</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="/Design Asset/Group-823.png" alt="Logo" class="logo"></a>
+        <ul>
+          <li><a href="../about-section/about.html">About</a></li>
+          <li><a href="../Contactus/contact.html">Contact Us</a></li>
+          <li><a href="#" onclick="toggleNotifications()">Notifications</a></li>
+          <li><a href="team.html">Team Herrinpp</a></li>
+        </ul>
+      </nav>
+      <section id="container">
+        <aside>
+          <section>
+            <div id="side-nav-1">
+              <h4 class="dashboard">Dashboard</h4>
+              <ul>
+                <li>
+                  <span class="material-symbols-outlined">
+                    mark_as_unread
+                  </span> All
+                </li>
+                <li>
+                  <span class="material-symbols-outlined">
+                    download
+                  </span> <a href="../downloads/downloads.html">Download</a> 
+                </li>
+                <li>
+                  <span class="material-symbols-outlined">
+                    menu_book</span><a href="../document/document.html">Documents</a>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined">
+                    check_circle
+                  </span>
+                  <a href="../saved files/saved.html"> Saved files
+                  </a>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined">settings</span> <a href="#">Settings</a> 
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <div id="side-nav-1">
+              <!-- side-nav-1 content -->
+            </div>
+          </section>
+          <section>
+            <div id="side-nav">
+              <h4 class="dashboard">Your activities</h4>
+              <ul>
+                <li>
+                  <span class="material-symbols-outlined">history</span>
+                  <a href="#" id="history-link" onclick="showHistory()">History</a>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined">share</span>
+                  <a href="#" id="share-link">Share</a>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined">star_half</span>
+                  <a href="#" id="ratings-link">Ratings</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </aside>
+        <section>
+          <template class="saved-file-template">
+            <div class="saved-file">
+              <div class="saved-file-name"></div>
+              <div class="saved-file-date"></div>
+            </div>
+          </template>
+        </section>
+    <script src="saved.js"></script>
+</body>
+</html>

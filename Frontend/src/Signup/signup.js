@@ -15,12 +15,12 @@ function registerUser(event){
     let userObj ={
         fullname,
         email,
-        password,
+        password
     };
     
     fetchAPI(userObj, 'sign-up', 'POST').then(data => {
         if(data.status){
-            window.location.href = "../Signin/signin.html"
+            window.location.href = "../Signup/signup.html"
         } else {
             alert(data.message);
         }

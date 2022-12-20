@@ -13,90 +13,85 @@
     />
   </head>
 
-    <body>
-      <header>
-        <nav>
-          <img
-            src="../assets/logo.png"
-            alt=""
-            width="25%"
-            class="image"
-          />
-          <ul>
-            <li>
-              <a href="../Signup/signup.html" class="light-blue"
-                >Sign Up</a
-              >
-            </li>
-            <li><a href="../Signin/signin.html" class="blue">Sign in</a></li>
-          </ul>
-        </nav>
-      </header>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">
+          <img src="../assets/logo.png" alt="" class="imagelogo" />
+        </a>
+        <ul>
+          <li>
+            <a href="../Signup/signup.html" class="light-blue">Sign Up</a>
+          </li>
+          <li><a href="../Signin/signin.html" class="blue">Sign in</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <!-- Login form -->
-      <section class="Login-form">
-        <h1>Welcome back!</h1>
-        <p>kindly provide your details below.</p>
+    <!-- Login form -->
+    <section class="Login-form">
+      <h1>Welcome back!</h1>
+      <p>kindly provide your details below.</p>
 
-        <div class="container">
-          <div class="form login">
-            <div class="form-content">
-              <form action="#" id="signin">
-                <div class="field input-field">
-                  <input
-                    type="email"
-                    id="emailAU"
-                    placeholder="Email Address"
-                    class="input"
-                    required
+      <div class="container">
+        <div class="form login">
+          <div class="form-content">
+            <form action="#" id="signin">
+              <div class="field input-field">
+                <input
+                  type="email"
+                  id="emailAU"
+                  placeholder="Email Address"
+                  class="input"
+                  required
+                />
+              </div>
+
+              <div class="field input-field">
+                <input
+                  type="password"
+                  id="passwordAU"
+                  placeholder="Password"
+                  class="password"
+                  required
+                />
+                <i class="bx bx-hide eye-icon"></i>
+              </div>
+              <div class="field button-field" style="text-align: center">
+                <button type="submit">Login</button>
+              </div>
+              <p>or continue with</p>
+
+              <div class="media">
+                <a href="#" class="field google">
+                  <img
+                    src="../images/google.png"
+                    alt=""
+                    class="google-img"
+                    width="10%"
                   />
-                </div>
-
-                <div class="field input-field">
-                  <input
-                    type="password"
-                    id="passwordAU"
-                    placeholder="Password"
-                    class="password"
-                    required
-                  />
-                  <i class="bx bx-hide eye-icon"></i>
-                </div>
-                <div class="field button-field" style="text-align: center">
-                  <button type="submit">Login</button>
-                </div>
-                <p>or continue with</p>
+                  <span>Google</span>
+                </a>
 
                 <div class="media">
-                  <a href="#" class="field google">
+                  <a href="#" class="field facebook">
                     <img
-                      src="../images/google.png"
+                      src="../images/facebook.png"
                       alt=""
-                      class="google-img"
-                      width="10%"
+                      class="facebook-icon"
+                      width="8%"
                     />
-                    <span>Google</span>
+                    <span>Facebook</span>
                   </a>
-
-                  <div class="media">
-                    <a href="#" class="field facebook">
-                      <img
-                        src="../images/facebook.png"
-                        alt=""
-                        class="facebook-icon"
-                        width="8%"
-                      />
-                      <span>Facebook</span>
-                    </a>
-                  </div>
                 </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <script src="../script.js"></script>
-      <script src="./signin.js"></script>
-    </body>
+    <script src="../script.js"></script>
+    <script src="./signin.js"></script>
+  </body>
 </html>

@@ -1,65 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chunk it</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chunk it</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-</head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html">
+          <img src="./assets/logo.png" alt="" class="imagelogo" />
+        </a>
+        <ul>
+          <li><a href="./index.html" class="menu">Home</a></li>
+          <li><a href="./about-section/about.html" class="menu">About</a></li>
+          <li>
+            <a href="./Contactus/contact.html" class="menu">Contact Us</a>
+          </li>
+          <li><a href="./Signup/signup.html" class="light-blue">Sign Up</a></li>
+          <li><a href="./Signin/signin.html" class="blue">Log In</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <nav>
-      <a href="./index.html">
-      <img src="./assets/logo.png" alt="" class="imagelogo">
+    <!-- INTRODUCTION -->
+    <section class="hero">
+      <h1>unlimited resizing, files downloads <br />and more...</h1>
+      <p class="p1">Chunk your CSV and JSON files with ease</p>
+      <a href="./Signup/signup.html">
+        <button class="reg-btn" role="button">Register</button>
       </a>
-      <ul>
-        <li><a href="./index.html" class="menu">Home</a></li>
-        <li><a href="./about-section/about.html" class="menu">About</a></li>
-        <li><a href="./Contactus/contact.html" class="menu">Contact Us</a></li>
-        <li><a href="./Signup/signup.html" class="light-blue">Sign Up</a></li>
-        <li><a href="./Signin/signin.html" class="blue">Log In</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- INTRODUCTION -->
-  <section class="hero">
-    <h1>unlimited resizing, files downloads <br>and more...</h1>
-    <p class="p1">Chunk your CSV and JSON files with ease</p>
-    <a href="./Signup/signup.html">
-      <button class="reg-btn" role="button">Register</button>
-    </a>
-
-    <div class="doc">
-      <a href="./documentation/documentation.html">
-      <h3>Documentation </h3>
-      <i class="fa-solid fa-arrow-right"></i>
-      </a>
-    </div>
-  </section>
-
-  <!-- reviews -->
-  <section id="review">
-    <div class="reviews">
-      <h2>Reviews</h2>
-      <div class="review">
-        <p class="author">John Smith</p>
-        <p class="message">This is a great product!</p>
-        <p class="rating">5 stars</p>
+      <div class="doc">
+        <a href="./documentation/documentation.html">
+          <h3>Documentation</h3>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
-      <div class="review">
-        <p class="author">Jane Doe</p>
-        <p class="message">I'm really happy with my purchase.</p>
-        <p class="rating">4 stars</p>
-      </div>
-    </div>
-  </section>
-  
-</body>
+    </section>
 
+    <!-- reviews -->
+    <section class="review">
+      <div class="reviews">
+        <h2>Reviews</h2>
+        <div class="rows">
+          <div class="container">
+            <p class="author">John Smith</p>
+            <p class="message">
+              I was doing some data mining and needed to split a large JSON file
+              into smaller chunks so that I could upload them to a data storage
+              service. I tried using a few different programs, but couldn't get
+              any of them to work. Then I was searching for a solution to the
+              problem and found ChunkIt.
+            </p>
+          </div>
+          <div class="container">
+            <p class="author">Ibrahim Musa</p>
+            <p class="message">
+              ChunkIt makes it easy to split CSV and JSON files into smaller
+              chunks with just one click. It's not always fun to work with a
+              large file and this is a lifesaver. You don't need any skills to
+              use it, either!
+            </p>
+          </div>
+          <div class="container">
+            <p class="author">Rita Ese</p>
+            <p class="message">
+              I've been using ChunkIt for years and it's been great. It's really
+              useful for the files I have that are so large that they are hard
+              to work with. I don't have any complaints, it just works and has
+              never crashed on me or anything like that.
+            </p>
+          </div>
+          <div class="container">
+            <p class="author">Emmanuel Ade</p>
+            <p class="message">
+              Usually, when I have to work with large files, I have to export
+              them as JSON and work on them in a database. It's just not the
+              most efficient way of working. ChunkIt was different however.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <footer>
+      <div class="footer">
+        <p>Made with <span>&#10084;</span> & &#9889; by Team Herringpp</p>
+      </div>
+    </footer>
+  </body>
 </html>

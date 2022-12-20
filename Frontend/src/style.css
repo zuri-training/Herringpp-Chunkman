@@ -189,6 +189,7 @@ nav ul li .blue {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
 .doc a h3 {

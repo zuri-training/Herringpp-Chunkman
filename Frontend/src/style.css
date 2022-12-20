@@ -10,9 +10,8 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 600;
-    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 47.4%, #5C97CE 99.99%, #FFFFFF 100%);
-    height: 100vh;
- 
+    background-color: #FAFAFA;
+    mix-blend-mode: darken;
   }
 
   nav .image {
@@ -67,117 +66,143 @@ nav ul li .blue {
 }
 
 /* main */
-.intro{
-  align-items: center;
-  justify-content: center;
-  margin-top: 15%;
+.hero{
+  padding: 10px;
+  max-width: 1000px;
+  margin: 90px auto;
+  text-align: center
 }
 
-.intro h1 {
+.hero h1 {
   color: #3B39A9;
   font-weight: 800;
   font-size: 38px;
   line-height: 46px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.intro p {
-  text-align: center;
-  color: #4C0C0C;
-  padding-bottom: 5rem;
-}
-
-.register {
-  background: #3B39A9;
-  box-shadow: 0px 0px 6px #121055;
-  border-radius: 25px;
-  color: #fff;
-  padding: 15px 35px;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-/* doc */
-.doc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #3B39A9;
-  margin-bottom: 60px;
-  text-align: center;
-}
-.doc h1 {
-  margin-left: 20px;
-  font-size: 24px;
-}
-
-/* review */
-.review {
-  height: 250px;
-  display: flex;
-  justify-content: center;
   margin-bottom: 20px;
-  padding: 15px;
-
+  text-transform: capitalize;
 }
-.reviews {
- background: #FAFAFA; 
- box-shadow: 5px 7px 15px 2px rgba(0, 0, 0, 0.15);
 
+.p1 {
+  color: #4C0C0C;
+  margin-bottom: 5%;
 }
-.cards{
-  display: flex;
-  justify-content: center;
+
+.reg-btn {
   align-items: center;
-  min-height: 400px;
-}
-
-.anonymous {
-  height: 250px;
-  width: 255px;
-  padding: 10px 15px;
-  background: #FAFAFA;
-  border-radius: 10px;
-  box-shadow: #131313;
-  border: 1px solid #FAFAFA;
-  margin: 25px;
-}
-.reviews h1 {
+  appearance: none;
+  background-clip: padding-box;
+  background-image: none;
+  border-style: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 38px;
-  line-height: 46px;
-  text-align: center;
-  color: #3B39A9;
-  padding-top: 3rem;
-}
-
-.reviews h2 {
-  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  color: #3B39A9;
-  padding: 0.5em 1em;
-  
-}
-.reviews p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.6px;
-  color: #131313;
- 
+  justify-content: center;
+  line-height: 24px;
+  margin: 0 0 40px;
+  min-height: 69px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 233px;
+  word-break: keep-all;
+  z-index: 0;
 }
 
-.team{
-  
-  display: inline-flexbox;
-  justify-content: center;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 200px;
-    padding-bottom: 15px;
+@media (min-width: 768px) {
+  .reg-btn {
+    padding: 19px 32px;
   }
+}
+
+.reg-btn:before,
+.reg-btn:after {
+  border-radius: 80px;
+}
+
+.reg-btn:before {
+  background-color: #121055;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.reg-btn:after {
+  background-color: initial;
+  background-image: linear-gradient(92.83deg, #3B39A9 0, #0e0c49 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.reg-btn:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+}
+
+.reg-btn:active:not(:disabled) {
+  color: #ccc;
+}
+
+.reg-btn:active:not(:disabled):after {
+  background-color: #121055;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.reg-btn:disabled {
+  cursor: default;
+  opacity: .24;
+}
+
+.doc a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doc a h3 {
+  color: #3B39A9
+}
+
+.doc a i{
+  font-size: 45px;
+  color: #3B39A9;
+}
+
+.doc:hover{
+  cursor: pointer;
+}
+
+

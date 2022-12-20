@@ -1,80 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
- 
- 
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    background-color: #FAFAFA;
-    mix-blend-mode: darken;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap");
 
-  nav .image {
-    top: -5px;
-    margin-left: -95px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #fafafa;
+  mix-blend-mode: darken;
+}
 
-  nav {
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: .5rem;
-    padding-left: 5%;
-    margin: 10px 0 40px 0;
+nav .imagelogo {
+  width: 190px;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-left: 5%;
+  margin: 10px 0 40px 0;
 }
 nav ul li {
-    display: inline-block;
-    padding: 0px 25px;
-    list-style: none;
+  display: inline-block;
+  padding: 0px 25px;
+  list-style: none;
 }
 
 nav ul li a {
-    color: #131313;
-    font-size: 20px; 
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
-    cursor: pointer;
+  color: #131313;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
 }
 
-.menu:hover{
-  color: #3B39A9;
+.menu:hover {
+  color: #3b39a9;
 }
 
 nav ul li .light-blue {
-  border:1px solid #3B39A9;  
-  font-size: 20px; 
-  color: #3B39A9;
+  border: 1px solid #3b39a9;
+  font-size: 20px;
+  color: #3b39a9;
   padding: 17px;
   border-radius: 6px;
 }
 nav ul li .blue {
-    background-color: #3B39A9; 
-    font-size: 22px; 
-    color: #fff;
-    padding: 15px 45px;
-    box-shadow: 0px 0px 6px #121055;
-    border-radius: 15px;
-    border: none;
+  background-color: #3b39a9;
+  font-size: 22px;
+  color: #fff;
+  padding: 15px 45px;
+  box-shadow: 0px 0px 6px #121055;
+  border-radius: 15px;
+  border: none;
 }
 
 /* main */
-.hero{
+.hero {
   padding: 10px;
   max-width: 1000px;
   margin: 90px auto;
-  text-align: center
+  text-align: center;
 }
 
 .hero h1 {
-  color: #3B39A9;
+  color: #3b39a9;
   font-weight: 800;
   font-size: 38px;
   line-height: 46px;
@@ -83,7 +81,7 @@ nav ul li .blue {
 }
 
 .p1 {
-  color: #4C0C0C;
+  color: #4c0c0c;
   margin-bottom: 5%;
 }
 
@@ -98,7 +96,7 @@ nav ul li .blue {
   display: inline-block;
   flex-direction: row;
   flex-shrink: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 25px;
   font-weight: 700;
   justify-content: center;
@@ -148,7 +146,7 @@ nav ul li .blue {
 
 .reg-btn:after {
   background-color: initial;
-  background-image: linear-gradient(92.83deg, #3B39A9 0, #0e0c49 100%);
+  background-image: linear-gradient(92.83deg, #3b39a9 0, #0e0c49 100%);
   bottom: 4px;
   content: "";
   display: block;
@@ -183,26 +181,24 @@ nav ul li .blue {
 
 .reg-btn:disabled {
   cursor: default;
-  opacity: .24;
+  opacity: 0.24;
 }
 
-.doc a{
+.doc a {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .doc a h3 {
-  color: #3B39A9
+  color: #3b39a9;
 }
 
-.doc a i{
+.doc a i {
   font-size: 45px;
-  color: #3B39A9;
+  color: #3b39a9;
 }
 
-.doc:hover{
+.doc:hover {
   cursor: pointer;
 }
-
-

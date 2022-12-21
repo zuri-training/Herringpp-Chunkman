@@ -22,14 +22,27 @@
         <a href="./index.html">
           <img src="./assets/logo.png" alt="" class="imagelogo" />
         </a>
-        <ul>
+
+        <button
+          class="toggle-bar"
+          aria-controls="navigationmenu"
+          aria-expanded="false"
+        >
+          <span class="sr-only"></span>
+        </button>
+
+        <ul class="navbar" id="navigationmenu" data-visible="false">
           <li><a href="./index.html" class="menu">Home</a></li>
           <li><a href="./about-section/about.html" class="menu">About</a></li>
           <li>
             <a href="./Contactus/contact.html" class="menu">Contact Us</a>
           </li>
-          <li><a href="./Signup/signup.html" class="light-blue">Sign Up</a></li>
-          <li><a href="./Signin/signin.html" class="blue">Log In</a></li>
+          <li class="signinli">
+            <a href="./Signup/signup.html" class="light-blue">Sign Up</a>
+          </li>
+          <li class="signup">
+            <a href="./Signin/signin.html" class="blue">Log In</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -103,4 +116,6 @@
       </div>
     </footer>
   </body>
+
+  <script src="./menufunc.js"></script>
 </html>

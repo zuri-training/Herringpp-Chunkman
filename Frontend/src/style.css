@@ -12,6 +12,7 @@ body {
   font-weight: 600;
   background-color: #fafafa;
   mix-blend-mode: darken;
+  overflow-x: hidden;
 }
 
 nav .imagelogo {
@@ -19,7 +20,7 @@ nav .imagelogo {
 }
 
 nav {
-  width: 100%;
+  max-width: 100%;
   height: 10vh;
   display: flex;
   align-items: center;
@@ -28,6 +29,11 @@ nav {
   padding-left: 5%;
   margin: 10px 0 40px 0;
 }
+
+.toggle-bar{
+  display: none;
+}
+
 nav ul li {
   display: inline-block;
   padding: 0px 25px;
@@ -43,6 +49,7 @@ nav ul li a {
   cursor: pointer;
 }
 
+
 .menu:hover {
   color: #3b39a9;
 }
@@ -52,7 +59,7 @@ nav ul li .light-blue {
   font-size: 20px;
   color: #3b39a9;
   padding: 17px;
-  border-radius: 6px;
+  border-radius: 15px;
 }
 nav ul li .blue {
   background-color: #3b39a9;
@@ -63,6 +70,8 @@ nav ul li .blue {
   border-radius: 15px;
   border: none;
 }
+
+
 
 /* main */
 .hero {
@@ -78,12 +87,14 @@ nav ul li .blue {
   font-size: 38px;
   line-height: 46px;
   margin-bottom: 20px;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .p1 {
   color: #4c0c0c;
+  padding: 0 17px;
   margin-bottom: 5%;
+  font-size: 20px;
 }
 
 .reg-btn {
@@ -121,9 +132,11 @@ nav ul li .blue {
   z-index: 0;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .reg-btn {
     padding: 19px 32px;
+    width: 140px;
+    font-size: 19px;
   }
 }
 
@@ -222,6 +235,7 @@ nav ul li .blue {
   line-height: 46px;
   letter-spacing: 0em;
   text-align: center;
+  text-transform: uppercase;
   margin: 60px 0;
 }
 
@@ -278,4 +292,101 @@ hr{
 
 .footer p span{
   color: red;
+}
+
+@media (max-width: 767px){
+  nav ul{
+    position: fixed;
+    inset: 0 0 0 0%;
+    display: flex;
+    flex-direction: column;
+    padding: min(30vh, 10rem) 2em;
+    background-color: #0e0c49;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 350ms ease-in;
+    gap: 1.5em;
+    z-index: 5;
+  }
+
+  nav ul[data-visible="true"]{
+    transform: translateX(0%);
+  }
+
+  nav ul li a {
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+
+  nav ul li .light-blue {
+    border: 2px solid #3b39a9;
+    font-size: 19px;
+    padding: 17px;
+  }
+  nav ul li .blue {
+    background-color: #3b39a9;
+    font-size: 19px;
+    padding: 17px 30px;
+  }
+
+.signinli{
+    margin: 20px 0;
+}
+
+.toggle-bar{
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  background-image: url('./assets/bars-solid.svg');
+  background-repeat: no-repeat;
+  width: 2.5rem;
+  aspect-ratio: 1;
+  top: 2rem;
+  right: 2rem;
+  outline: none;
+  z-index: 100;
+  border: none;
+}
+
+.toggle-bar[aria-expanded='true']{
+  background-image: url('./assets/xmark-solid.svg');
+}
+
+nav .imagelogo {
+  width: 130px;
+}
+
+.hero {
+  padding: 20px;
+}
+
+.hero h1 {
+  color: #3b39a9;
+  font-weight: 800;
+  font-size: 27px;
+  line-height: 38px;
+}
+
+.doc a i {
+  font-size: 39px;
+}
+
+.reviews h2{
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.p1 {
+  font-size: 16px;
+}
+
+.footer p{
+  font-size: 17px;
+}
+
 }

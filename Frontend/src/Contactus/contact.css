@@ -5,63 +5,6 @@
     padding: 0;
     box-sizing: border-box;
   }
-  body {
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    background-color: #fafafa;
-    mix-blend-mode: darken;
-  }
-  
-  nav .imagelogo {
-    width: 190px;
-  }
-  
-  nav {
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-left: 5%;
-    margin: 10px 0 40px 0;
-  }
-  nav ul li {
-    display: inline-block;
-    padding: 0px 25px;
-    list-style: none;
-  }
-  
-  nav ul li a {
-    color: #131313;
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
-    cursor: pointer;
-  }
-  
-  .menu:hover {
-    color: #3b39a9;
-  }
-  
-  nav ul li .light-blue {
-    border: 1px solid #3b39a9;
-    font-size: 20px;
-    color: #3b39a9;
-    padding: 17px;
-    border-radius: 6px;
-  }
-  nav ul li .blue {
-    background-color: #3b39a9;
-    font-size: 22px;
-    color: #fff;
-    padding: 15px 45px;
-    box-shadow: 0px 0px 6px #121055;
-    border-radius: 15px;
-    border: none;
-  }
 
 .head {
     color: #3B39A9;
@@ -167,45 +110,4 @@ footer {
     background-color: #FFFFFF;
     color: #3B39A9;
     border: 1px solid #3B39A9;
-}
-
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
- .logo {
-    display: none;
- }
-
- ul {
-    margin-left: 200px;
-}
-
-.navbar a {
-    font-size: 11px;
-}
-
-li {
-    margin: 5px;
-    width: 127px;
-}
-
-.section {
-    width: 690px;
-}
-input{
-    width: 600px;
-}
-textarea {
-    width: 600px;
-    height: 255px;
-}
-.msg {
-    flex-direction: column;
-}
-
-.btn {
-    align-self: center;
-    width: 287px;
-}
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="about.css">
     <title>Document</title>
 </head>
@@ -11,17 +12,32 @@
     <header>
         <nav>
           <a href="../index.html">
-          <img src="../assets/logo.png" alt="" class="imagelogo">
+            <img src="../assets/logo.png" alt="" class="imagelogo" />
           </a>
-          <ul>
+  
+          <button
+            class="toggle-bar"
+            aria-controls="navigationmenu"
+            aria-expanded="false"
+          >
+            <span class="sr-only"></span>
+          </button>
+  
+          <ul class="navbar" id="navigationmenu" data-visible="false">
             <li><a href="../index.html" class="menu">Home</a></li>
             <li><a href="../about-section/about.html" class="menu">About</a></li>
-            <li><a href="../Contactus/contact.html" class="menu">Contact Us</a></li>
-            <li><a href="../Signup/signup.html" class="light-blue">Sign Up</a></li>
-            <li><a href="../Signin/signin.html" class="blue">Log In</a></li>
+            <li>
+              <a href="../Contactus/contact.html" class="menu">Contact Us</a>
+            </li>
+            <li class="signinli">
+              <a href="../Signup/signup.html" class="light-blue">Sign Up</a>
+            </li>
+            <li class="signup">
+              <a href="../Signin/signin.html" class="blue">Log In</a>
+            </li>
           </ul>
         </nav>
-    </header>
+      </header>
 
     <div class="container">
         <div class="about">
@@ -48,9 +64,14 @@
         </div>
     </div>
 
+    <hr />
+
     <footer>
-        <p>&copy; Team Herringpp for zuri training 2022 | terms of use privacy</p>
+      <div class="footer">
+        <p>Made with <span>&#10084;</span> & &#9889; by Team Herringpp</p>
+      </div>
     </footer>
-    <script src="about.js"></script>
-</body>
+  </body>
+
+  <script src="../menufunc.js"></script>
 </html>

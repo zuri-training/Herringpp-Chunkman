@@ -5,53 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="documentation.css">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="documentation.css" />
   </head>
+
   <body>
-    <nav class="navbar">
-      <div class="container">
-        <div class="logo">
-          <img src="images/Group 822.png" alt="logo" />
-        </div>
-        <ul class="nav">
+    <header>
+      <nav>
+        <a href="../index.html">
+          <img src="../assets/logo.png" alt="" class="imagelogo" />
+        </a>
+
+        <button
+          class="toggle-bar"
+          aria-controls="navigationmenu"
+          aria-expanded="false"
+        >
+          <span class="sr-only"></span>
+        </button>
+
+        <ul class="navbar" id="navigationmenu" data-visible="false">
+          <li><a href="../index.html" class="menu">Home</a></li>
+          <li><a href="../about-section/about.html" class="menu">About</a></li>
           <li>
-            <a href="#">Home</a>
+            <a href="../Contactus/contact.html" class="menu">Contact Us</a>
           </li>
-          <li>
-            <a href="#">About us</a>
+          <li class="signinli">
+            <a href="../Signup/signup.html" class="light-blue">Sign Up</a>
           </li>
-          <li>
-            <a href="#">Contact us</a>
+          <li class="signup">
+            <a href="../Signin/signin.html" class="blue">Log In</a>
           </li>
-          <li>
-            <a href="#">Resources</a>
-          </li>
-          <li><button id="register">Sign up</button></li>
-          <li><button id="login">Login</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div id="intro">
+        <h1>Chunk it Documentation</h1>
+        <p>
+          Welcome to chunk it platform where you can learn the basics on how to
+          work around our platform
+        </p>
+      </div>
+      <div id="tableofcont">
+        <h2>Table of contents</h2>
+        <ul>
+          <li><a href="">What is chunk it?</a></li>
+          <li><a href="">Get started</a></li>
+          <li><a href="">How to chunk on the platform</a></li>
+          <li><a href="">How to save files</a></li>
+          <li><a href="">How to download</a></li>
+          <li><a href="">About the platform</a></li>
+          <li><a href="">Why choose chunk it?</a></li>
         </ul>
       </div>
-    </nav>
-    <section>
-    <div id="intro">
-      <h1>Chunk it Documentation</h1>
-      <p>
-        Welcome to chunk it platform where you can learn the basics on how to
-        work around our platform
-      </p>
-    </div>
-    <div id="tableofcont">
-      <h2>Table of contents</h2>
-      <ul>
-        <li><a href="">What is chunk it?</a></li>
-        <li><a href="">Get started</a></li>
-        <li><a href="">How to chunk on the platform</a></li>
-        <li><a href="">How to save files</a></li>
-        <li><a href="">How to download</a></li>
-        <li><a href="">About the platform</a></li>
-        <li> <a href="">Why choose chunk it?</a> </li>
-      </ul>
-    </div>
-</section>
+    </section>
     <section>
       <!-- <div id="whatis">
         <h2>What is chunk it?</h2>
@@ -170,5 +179,15 @@
         <a href="">Contact Us</a> page.
       </p>
     </div>
+
+    <hr />
+
+    <footer>
+      <div class="footer">
+        <p>Made with <span>&#10084;</span> & &#9889; by Team Herringpp</p>
+      </div>
+    </footer>
   </body>
+
+  <script src="../menufunc.js"></script>
 </html>

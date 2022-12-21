@@ -1,66 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="contact.css">
-</head>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-          <a href="../index.html">
-          <img src="../assets/logo.png" alt="" class="imagelogo">
-          </a>
-          <ul>
-            <li><a href="../index.html" class="menu">Home</a></li>
-            <li><a href="../about-section/about.html" class="menu">About</a></li>
-            <li><a href="../Contactus/contact.html" class="menu">Contact Us</a></li>
-            <li><a href="../Signup/signup.html" class="light-blue">Sign Up</a></li>
-            <li><a href="../Signin/signin.html" class="blue">Log In</a></li>
-          </ul>
-        </nav>
-    </header>
+      <nav>
+        <a href="../index.html">
+          <img src="../assets/logo.png" alt="" class="imagelogo" />
+        </a>
 
+        <button
+          class="toggle-bar"
+          aria-controls="navigationmenu"
+          aria-expanded="false"
+        >
+          <span class="sr-only"></span>
+        </button>
+
+        <ul class="navbar" id="navigationmenu" data-visible="false">
+          <li><a href="../index.html" class="menu">Home</a></li>
+          <li><a href="../about-section/about.html" class="menu">About</a></li>
+          <li>
+            <a href="../Contactus/contact.html" class="menu">Contact Us</a>
+          </li>
+          <li class="signinli">
+            <a href="../Signup/signup.html" class="light-blue">Sign Up</a>
+          </li>
+          <li class="signup">
+            <a href="../Signin/signin.html" class="blue">Log In</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <div class="section">
-    <header>
-        <div class="head">Contact Us</div>
-        <div class="head-2">For more enquiries, please fill the form and we answer you
-            propmtly.</div>
-    </header>
-        <form action="" class="section-2">
-            <div class="input-box">
-                <label for="fname">Full Name</label><br>
-                <input type="text" placeholder="Full Name" required>
-            </div>
+      <div class="head"><h1>Contact Us</h1></div>
+      <div class="head-2">
+        <h2>
+          For more enquiries, please fill the form and we answer you propmtly.
+        </h2>
+      </div>
 
-            <div class="input-box">
-                <label for="email">Email Address</label><br>
-                <input type="text" placeholder="Enter your email address" required>
-            </div>
+      <form action="" class="section-2">
+        <div class="input-box">
+          <label for="fname">Full Name</label><br />
+          <input type="text" placeholder="Full Name" required />
+        </div>
 
-            <div class="input-box">
-                <label for="feedback">Feedback/Message</label><br>
+        <div class="input-box">
+          <label for="email">Email Address</label><br />
+          <input type="text" placeholder="Enter your email address" required />
+        </div>
 
-                <div class="msg">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message here"></textarea>
-                    <br>
-                    <input type="submit" value="Send" class="btn">
-                </div>
+        <div class="input-box">
+          <label for="feedback">Feedback/Message</label><br />
 
-            </div>
-        </form>
+          <div class="msg">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Enter your message here"
+            ></textarea>
+            <br />
+            <input type="submit" value="Send" class="btn" />
+          </div>
+        </div>
+      </form>
     </div>
 
+    <hr />
 
     <footer>
-            <h3>&copy; Team Herringpp for Zuri Training 2022| Terms of Use| Privacy.</h3>
-        </div>
+      <div class="footer">
+        <p>Made with <span>&#10084;</span> & &#9889; by Team Herringpp</p>
+      </div>
     </footer>
-</body>
+  </body>
 
+  <script src="../menufunc.js"></script>
 </html>

@@ -20,7 +20,6 @@ nav .imagelogo {
 }
 
 nav {
-  max-width: 100%;
   height: 10vh;
   display: flex;
   align-items: center;
@@ -28,6 +27,10 @@ nav {
   padding-top: 0.5rem;
   padding-left: 5%;
   margin: 10px 0 40px 0;
+}
+
+nav ul{
+  max-width: 100%;
 }
 
 .toggle-bar{

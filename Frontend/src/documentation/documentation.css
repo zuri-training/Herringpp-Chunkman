@@ -1,31 +1,94 @@
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  nav .logo {
-    height: 50px;
-    margin-right: 20px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    background-color: #3b39a9;
-    margin-right: 15px;
-    width: 210px;
-    padding: 15px;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 18px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 47.4%, #5C97CE 99.99%, #FFFFFF 100%);
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+.navbar .logo {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+nav li {
+  margin:0px 5px;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+
+
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+.logo {
+  padding-top: 13px;
+}
+
+.navbar ul {
+  display: flex;
+}
+#register{
+  background-color: #FFFFFF;
+  color: #3B39A9;
+  border-radius: 5px;
+  border: solid 1px;
+  margin: -10px;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+}
+#login{
+  color: #FFFFFF;
+  background-color: #3B39A9;
+  border-radius: 5px;
+  border: none;
+  margin: -10px;
+  padding: 10px;
+  width: 80px;
+  text-align: center;
+}
+#tableofcont{
+  font-size: 15px;
+}
+#intro h1{
+  text-align: center;
+  margin: 20px 0px ;
+}
+section{
+  margin-left: 70px;
+}
+p{
+  margin: 10px 0;
+}
+#tableofcont a{
+  text-decoration: none;
+}
+#tableofcont ul, #gettingstarted ul{
+  margin-left: 30px;
+}
+#tableofcont{
+  margin-bottom: 80px;
+}
+p{
+  width: 50%;
+}

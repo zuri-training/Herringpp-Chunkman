@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('upload-form');
     const fileInput = document.getElementById('file-input');
@@ -11,13 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        const formData = new FormData();
-        formData.append('file', fileInput.files[0]);
+        const formData = new FormData($('#upload-form')[0]);
+        formData.append('chunkSize', $('#chunk-size').val()); // Read the chunk size value from the input field
     });
 });
-
-const formData = new FormData($('#upload-form')[0]);
-formData.append('chunkSize', $('#chunk-size').val()); // Read the chunk size value from the input field
 
 $.ajax({
   url: '/csv',

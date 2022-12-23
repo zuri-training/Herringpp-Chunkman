@@ -25,12 +25,18 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding-top: 0.5rem;
-  padding-left: 5%;
+  padding-left: 15px;
   margin: 10px 0 40px 0;
 }
 
 nav ul{
-  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 2rem;
+  padding-right: 15px;
 }
 
 .toggle-bar{
@@ -39,7 +45,6 @@ nav ul{
 
 nav ul li {
   display: inline-block;
-  padding: 0px 25px;
   list-style: none;
 }
 
@@ -297,7 +302,7 @@ hr{
   color: red;
 }
 
-@media (max-width: 767px){
+@media (max-width: 846px){
   nav ul{
     position: fixed;
     inset: 0 0 0 0%;
@@ -307,7 +312,7 @@ hr{
     background-color: #0e0c49;
     align-items: center;
     transform: translateX(100%);
-    transition: transform 350ms ease-in;
+    transition: transform 0.8s ease-in-out;
     gap: 1.5em;
     z-index: 5;
   }

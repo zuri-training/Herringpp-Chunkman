@@ -361,7 +361,7 @@ hr{
 }
 
 .toggle-bar[aria-expanded='true']{
-  background-image: url('./assets/xmark-solid.svg');
+  background-image: url('./assets/close-round.svg');
 }
 
 nav .imagelogo {

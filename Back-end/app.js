@@ -25,12 +25,10 @@ app.use((req, res, next) => {
 
 // importing user context
 const userRoute = require("./routes/Userroutes");
-const splitCSV = require("./routes/chunkCSV");
-const splitJSON = require("./routes/chunkJSON")
+const splitFile = require("./routes/chunkfile");
 
 app.use("/api/auth", userRoute);
-app.use("/split", splitCSV);
-app.use("/split", splitJSON);
+app.use("/split", splitFile);
 
 
 

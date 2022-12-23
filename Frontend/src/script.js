@@ -1,5 +1,6 @@
 const API = 'https://chunkit.onrender.com/api/auth/'
 
+
 async function fetchAPI(data, endpoint, method){
     try{
         const response = await fetch(`${API}/${endpoint}`, {

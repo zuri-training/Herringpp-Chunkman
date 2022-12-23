@@ -20,7 +20,7 @@ const formData = new FormData($('#upload-form')[0]);
 formData.append('chunkSize', $('#chunk-size').val()); // Read the chunk size value from the input field
 
 $.ajax({
-  url: '/CSV',
+  url: '/csv',
   type: 'POST',
   data: formData,
   contentType: false,
@@ -33,4 +33,3 @@ $.ajax({
     console.error(error);
   }
 });
-

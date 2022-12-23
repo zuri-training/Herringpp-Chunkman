@@ -20,7 +20,7 @@ function registerUser(event){
     
     fetchAPI(userObj, 'sign-up', 'POST').then(data => {
         if(data.status){
-            window.location.href = "../Signup/signup.html"
+            window.location.href = "../Signin/signin.html"
         } else {
             alert(data.message);
         }

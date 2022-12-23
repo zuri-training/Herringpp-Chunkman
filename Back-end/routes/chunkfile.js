@@ -36,6 +36,9 @@ router.post('/csv', upload.single('file'), (req, res) => {
 });
 
 router.post('/json', upload.single('file'), (req, res) => {
+  // Read the chunk size parameter from the request body
+  const chunkSize = req.body.chunkSize || 1000;
+  
   // Read the contents of the file
   fs.readFile(req.file.path, 'utf8', (error, data) => {
     if (error) {
@@ -46,7 +49,6 @@ router.post('/json', upload.single('file'), (req, res) => {
     const json = JSON.parse(data);
 
     // Break the JSON object into smaller chunks
-    const chunkSize = req.body.chunkSize || 1000;
     const chunks = [];
     for (let i = 0; i < json.length; i += chunkSize) {
       chunks.push(json.slice(i, i + chunkSize));

@@ -3,7 +3,7 @@ const router = express.Router();
 const User = require("../model/user");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const auth = require("../middleware/auth");
+// const auth = require("../middleware/auth");
 const Joi = require("@hapi/joi")
 
 router.use(express.json());

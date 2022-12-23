@@ -38,19 +38,14 @@
       </ul>
     </nav>
     <section>
-      <form id="upload-form">
-        <label for="file-input">Upload File</label>
-        <input type="file" accept=".csv, .json" id="file-input" />
-        <label for="chunk-size">Chunk size:</label>
-        <input type="number" id="chunk-size" value="1000" />
-        <button type="submit">Upload</button>
+      <form id="upload-form" class="file-select">
+        <label for="file-input" class="txt">Upload File</label>
+        <input type="file" accept=".csv, .json" id="file-input" class="fileinput"/>
+        <label for="chunk-size" class="txt">Chunk size</label>
+        <input type="number" id="chunk-size" class="select" value="1000" />
+        <button type="submit" class="uploadbtn">Upload</button>
       </form>
 
-      <div class="btn-container">
-        <button class="btn">
-          <a href="#">Chunk File</a>
-        </button>
-      </div>
     </section>
 
     <script src="script.js"></script>

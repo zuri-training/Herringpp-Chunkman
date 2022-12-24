@@ -24,7 +24,8 @@ function signinUser(event){
     };
     
     fetchAPI(userObj, 'sign-in', 'POST').then((data) => {
-        if(data.status){
+        if(data.status === 'Login successful'){
+            localStorage.setItem('token', data.data.user.token);
             window.location.href = "../Dashboard/dashboard.html"
         } else {
             alert(data.message);

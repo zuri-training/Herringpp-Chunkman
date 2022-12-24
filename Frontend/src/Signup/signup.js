@@ -19,8 +19,8 @@ function registerUser(event){
     };
     
     fetchAPI(userObj, 'sign-up', 'POST').then(data => {
-        console.log(data);
         if(data.message === 'User created'){
+            alert('User created');
             setTimeout(() => {
                 window.location.href = "../Signin/signin.html"
             }, 1500)

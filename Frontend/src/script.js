@@ -1,4 +1,4 @@
-const API = 'https://chunkit.onrender.com/api/auth/'
+const API = 'https://chunkit.onrender.com/api/auth'
 
 
 async function fetchAPI(data, endpoint, method){

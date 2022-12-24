@@ -13,16 +13,17 @@ function registerUser(event){
     }
 
     let userObj ={
-        fullname,
-        email,
-        password
+        fullName: fullname,
+        email: email,
+        password: password
     };
     
     fetchAPI(userObj, 'sign-up', 'POST').then(data => {
-        if(data.status){
-            window.location.href = "../Signin/signin.html"
-        } else {
-            alert(data.message);
+        console.log(data);
+        if(data.message === 'User created'){
+            setTimeout(() => {
+                window.location.href = "../Signin/signin.html"
+            }, 1500)
         }
     });
 }

@@ -15,7 +15,7 @@ router.post("/sign-up", async (req, res) => {
 
     // Validate user input
     if (!(email && password && fullName)) {
-      res.status(400).send("All input is required");
+      return res.status(400).json({message: "All input is required"});
     }
 
     // const schema = Joi.object({
@@ -55,7 +55,7 @@ router.post("/sign-up", async (req, res) => {
     user.token = token;
 
     // return new user
-    res.status(201).json(user);
+    res.status(201).json({message: 'User created', user});
   } catch (err) {
     console.log(err);
   }

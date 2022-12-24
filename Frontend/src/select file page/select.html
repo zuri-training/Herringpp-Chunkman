@@ -38,9 +38,11 @@
       </ul>
     </nav>
     <section>
-      <form id="upload-form" class="file-select">
+      <form id="upload-form">
+        <div class="file-select">
         <label for="file-input" class="txt">Upload File</label>
         <input type="file" accept=".csv, .json" id="file-input" class="fileinput"/>
+        </div>
         <label for="chunk-size" class="txt">Chunk size</label>
         <input type="number" id="chunk-size" class="select" value="1000" />
         <button type="submit" class="uploadbtn">Upload</button>
@@ -50,5 +52,6 @@
 
     <script src="./server.js"></script>
     <script src="./select.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </body>
 </html>
